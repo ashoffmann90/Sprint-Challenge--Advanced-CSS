@@ -1,1 +1,18 @@
 // Mixins Here
+
+.btn-style(@bgc, @btnfontsize){
+    background-color: @bgc;
+    font-size: @btnfontsize;
+    color: whitesmoke;
+    border:0;
+    border-radius: 6px;
+    width: 35%;
+    height: 15%;
+}
+
+.btn-hover(){
+    &:hover{
+        color: @btn-bg-color;
+        background-color: whitesmoke;
+    }
+}

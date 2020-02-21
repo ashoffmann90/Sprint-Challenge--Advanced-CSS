@@ -4,6 +4,10 @@
 
   .intro {
 
+    img{
+      border-radius: 5px;
+    }
+
     h2 {
       padding: 15px;
     }
@@ -57,7 +61,10 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      button {
+        .btn-style(@btn-bg-color, 2rem);
+
+        .btn-hover();
       }
     }
 
@@ -71,5 +78,10 @@
         border-radius: 10px;
       }
     }
+  }
+
+  footer{
+    background-color: @footer-background;
+    color: @footer-font-color;
   }
 }// home
