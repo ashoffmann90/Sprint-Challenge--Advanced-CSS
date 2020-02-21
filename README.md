@@ -34,13 +34,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website will be designed for specific screen sizes, while a responsive website will work for any screens that are in between whatever sizes you might design an adaptive website for.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means that you initially design the website for mobile, and use min-width @media queries to grow the website for bigger screens.
+Desktop first is the opposite, using max-width @media queries to shrink the design to fit smaller screens.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It allows us to easily convert rem to pixels. For instance, if we say 1rem, it equals 10px. Or if we want 16px we would use 1.6rem. 2 rem would be twice the size of the root font size.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing compiles your styles so that:
+1) Visually, it becomes easier to read as the structure of the style file mimics HTML, because of nesting.
+2) It allows you to use multiple files to organize your the different parts of the website so you are not scrolling through potentially thousands of lines of code.
+3) It allows you to make a mixin, which is a set of design elements that you can easily apply to different parts of the website.
+For instance, you can assign font color, background color, and font families to a mixin. Then you can call that mixin to change the style without having to write out font-family, background-color, and color.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+The most useful aspect is the nesting. It simplifies using selectors. You have less chance to miss-select an element.
+Right now, parametric mixins give me the most trouble. There are just a lot of steps and it takes a long time to do right now. Once I really learn the numerous steps and get into more complicated code, they will save more time rather than being a waste of time as they are now.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -116,9 +132,9 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [x] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [x] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -130,6 +146,6 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Introduce CSS animations to your site.
 
-* [ ] Create a fixed navigation and add some opacity to the background
+* [x] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
